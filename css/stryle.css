@@ -1,0 +1,187 @@
+:root{
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233,287,2);
+    --blanco: #fff;
+    --negro: #000;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/*---GLOBALES--*/
+body{
+    background-image: url(../img/bane.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1rem;
+    color: #ffffff;
+}
+@media (min-width: 480px) {
+    p{
+        margin-left: 11rem;
+    }
+    
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    
+    
+}
+
+img {
+    margin: auto;
+    display: flex;
+    width: 62rem;
+}
+
+@media (min-width: 768px) {
+  img{
+    width: auto;
+  }
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+   
+}
+
+h1, h2, h3{
+    text-align: center;
+    color: #000;
+    font-family: var(--fuentePrincipal);
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/*--footer-*/
+.footer {
+    background-color: #545c80;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    
+}
+.footer_text{
+    text-align: center;
+    font-weight: bold;
+}
+/*--header--*/
+.header {
+    /*display: flex;*/
+    text-align: left;
+}
+
+.header_logo{
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+}
+
+
+
+/*--navegacion--*/
+.navegacion{
+    background-color: #545c80;; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: .3rem;
+    
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        flex-direction: row;
+        text-align: center;  
+    }
+}
+
+.navegacion_enlace{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;   
+}
+
+.navegacion a{
+    padding: 1rem;
+}
+
+
+.navegacion_enlace--activo, 
+.navegacion a:hover{
+    background-color: #333951;
+    color:#fff;      
+}
+
+/*--grid--*/
+.grid{
+    display:grid;
+    
+}
+
+@media (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*--producto--*/
+
+.producto{
+   margin-left: -20rem;
+   
+}
+
+.producto__imagen{
+    padding-left: 5rem;
+    margin-top: 5rem;
+}
+
+@media (min-width: 480px) {
+    .producto__imagen{
+      width: auto;
+      margin-left: 11rem;
+    }
+  }
+
+
+.producto__informacion{
+    text-align: center;
+}
+
+.producto__nombre{
+    text-align: center;
+    color: #000;
+}
+
+.producto__precio{
+    color: #000;
+    text-align: center;
+}
